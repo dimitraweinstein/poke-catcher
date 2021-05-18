@@ -19,7 +19,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: #efefef;
 }
 
 main {
@@ -30,18 +30,40 @@ main {
     margin-bottom: calc(var(--footer-height));
 }
 
+.poke-border {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+    max-width: max-content;
+    max-height: max-content;
+    border: solid #233d4d 3px;
+    border-radius: 15% ;
+    filter:drop-shadow(15px 10px 8px #233d4d50);
+    background-color: #fccb4683;
+}
+
+.header-css {
+    background-color: #fe812d;
+    margin-bottom: 20px;
+}
+
 .pokemon {
     display: flex;
     justify-content: space-around;
     margin: 25px;
     width: 150px;
     height: 150px;
+    filter: drop-shadow(15px 10px 8px #233d4d50);
+    
 }
 
 .button {
     display: flex;
     align-self: center;
     justify-content: center;
+    background-color: transparent;
+    margin: 25px;
 }
 
 input {
@@ -49,12 +71,14 @@ input {
 }
 
 input:checked + .pokemon {
-    border: solid 1px black;
+    border: solid 3px #619b8a;
+    background-color: #a1c181c5;
+    box-shadow: var(--shadow);
 }
 
 .button:active {
     animation: rotation 3ms infinite linear;
-    transform: rotate(180deg);
+    filter: drop-shadow(15px 10px 8px #233d4d50);
 }
 
 @keyframes rotation {
@@ -70,7 +94,7 @@ input:checked + .pokemon {
 #catch-button {
     display: flex;
     justify-content: center;
-    background-image: url('../assets/pball2.png');
+    background-image: url('../assets/image.png.png');
     background-size: 150px 150px;
     border: none;
     width: 150px;
@@ -93,6 +117,7 @@ section {
 }
 
 header {
+    text-decoration-color: #233d4d;
     display: flex;
     justify-content: flex-end;
     background-color: var(--color3);
@@ -108,9 +133,12 @@ footer {
 }
 
 
-h2 {
+h1 {
+    text-decoration-color: #233d4d;
     font-size: 1.8rem;
-    font-weight: bold;
+    font-weight: 800;
+    align-self: center;
+    margin-right: 20px;
 }
 
 .gutter-right {
