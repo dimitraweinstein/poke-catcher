@@ -31,15 +31,48 @@ main {
 }
 
 .pokemon {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
     width: 150px;
     height: 150px;
 }
 
+.button {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+input {
+    display: none;
+}
+
+input:checked + .pokemon {
+    border: solid 1px black;
+}
+
+.button:active {
+    animation: rotation 3ms infinite linear;
+    transform: rotate(180deg);
+}
+
+@keyframes rotation {
+        from {
+            transform: rotate(0deg)
+    }
+        to {
+            transform: rotate(359deg);
+        }
+}
+
+
 #catch-button {
     display: flex;
-    align-self: ;
-    background-image: url('/assets/pokeball.png');
+    justify-content: center;
+    background-image: url('../assets/pball2.png');
     background-size: 150px 150px;
+    border: none;
     width: 150px;
     height: 150px;
 }
@@ -119,7 +152,7 @@ footer {
     box-shadow: var(--shadow);
 }
   
-  @keyframes pulse {
+/* @keyframes pulse {
     20% {
       transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
     }
@@ -136,4 +169,4 @@ footer {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
 
-  }
+  } */
