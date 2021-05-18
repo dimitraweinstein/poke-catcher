@@ -4,7 +4,7 @@ import { getPokeDex } from '../local-storage-utils.js';
 const pokedex = getPokeDex();
 // console.log(pokedex);
 const captured = mungeCaptured(pokedex);
-console.log(captured);
+// console.log(captured);
 const names = mungeNames(pokedex);
 // console.log(names);
 
