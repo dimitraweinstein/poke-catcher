@@ -167,7 +167,13 @@ h1 {
 } */
 
 
-
+canvas {
+    display: flex;
+    margin: 25px;
+    padding: 10px;
+    width: 450px;
+    height: 500px;
+}
 
 
 header img {
