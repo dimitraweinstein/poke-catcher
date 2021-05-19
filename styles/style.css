@@ -30,6 +30,14 @@ main {
     margin-bottom: calc(var(--footer-height));
 }
 
+
+/* canvas {
+    width: 200px;
+    height: 450px;
+    margin: 25px;
+    padding: 25px;
+} */
+
 .poke-border {
     display: flex;
     justify-content: center;
@@ -167,13 +175,6 @@ h1 {
 } */
 
 
-canvas {
-    display: flex;
-    margin: 50px;
-    padding: 25px;
-    width: 200px;
-    height: 350px;
-}
 
 
 header img {

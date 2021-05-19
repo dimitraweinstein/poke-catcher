@@ -59,3 +59,13 @@ export function getTotalCaptured() {
     }
     return total;
 }
+
+export function getTotalEncounters() {
+    let total = 1;
+    const pokedex = getPokeDex();
+    
+    for (let poke of pokedex) {
+        total += poke.encountered;
+    }
+    return total;    
+}
